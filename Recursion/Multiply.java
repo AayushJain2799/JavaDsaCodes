@@ -1,0 +1,16 @@
+public class Multiply {
+    public static int multiply(int m, int n)
+    {
+        if(n==0|| m==0)
+            return 0;
+        return m+ multiply(m,n-1);
+    }
+    public static void main(String[] args)
+    {
+        int m=5;
+        int n=4;
+        System.out.println(multiply(m,n));
+
+        
+    }
+}
